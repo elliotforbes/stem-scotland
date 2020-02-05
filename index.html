@@ -1,42 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>STEM in Scotland</title>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6 mb-8">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <svg
+          class="fill-current h-8 w-8 mr-2"
+          width="54"
+          height="54"
+          viewBox="0 0 54 54"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
+          />
+        </svg>
+        <span class="font-semibold text-xl tracking-tight">STEM Scotland</span>
+      </div>
+      <div class="block lg:hidden">
+        <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            Initiatives
+          </a>
+          <a href="get-in-touch.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            Get In Touch
+          </a>
+          <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+            About
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://github.com/elliotforbes/stem-scotland"
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+            >Github Repo</a
+          >
+        </div>
+      </div>
+    </nav>
 
-    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-          <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
-          <span class="font-semibold text-xl tracking-tight">STEM Scotland</span>
+    <div class="container mx-auto">
+      <h1 class="text-2xl">STEM Initiatives</h1>
+      <hr />
+      <!-- Start of card -->
+      <div class="md:flex mt-8 mb-8">
+        <div class="md:flex-shrink-0">
+          <img
+            class="rounded-lg md:w-56 mt-10"
+            src="https://www.allstarcode.org/wp-content/uploads/2016/06/ASClogo_598x99.jpg"
+            alt="ALLSTARCODE"
+          />
         </div>
-        <div class="block lg:hidden">
-          <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-          </button>
-        </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div class="text-sm lg:flex-grow">
-            <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-              Initiatives
-            </a>
-            <a href="get-in-touch.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-              Get In Touch
-            </a>
-            <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
-              About
-            </a>
+        <div class="mt-4 md:mt-0 md:ml-6">
+          <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">
+            ALLSTARCODE
           </div>
-          <div>
-            <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
-          </div>
+          <a
+            href="#"
+            class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline"
+            >Our Mission:</a
+          >
+          <p class="mt-2 text-gray-600">
+            All Star Code creates economic opportunity by developing a new
+            generation of boys and young men of color with an entrepreneurial
+            mindset who have the tools they need to succeed in a technological
+            world.
+          </p>
+          <p class="mt-2 text-gray-600">
+            <a href="https://www.allstarcode.org">https://www.allstarcode.org</a>
+          </p>
         </div>
-      </nav>
-    
-</body>
+      </div>
+      <!-- End of card -->
+      <hr />
+      <!-- Start of card -->
+      <div class="md:flex mt-8 mb-8">
+        <div class="md:flex-shrink-0">
+          <img
+            class="rounded-lg md:w-56 mt-6"
+            src="https://www.csforall.org/images/csforall-logo.svg"
+            alt="Woman paying for a purchase"
+          />
+        </div>
+        <div class="mt-4 md:mt-0 md:ml-6">
+          <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">
+            CSForALL
+          </div>
+          <a href="https://csforall.org"
+            class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline"
+            >Our Mission:</a>
+          <p class="mt-2 text-gray-600">
+            CSforALL’s mission is to make high-quality computer science an integral part of the educational experience of all K-12 students and teachers and to support student pathways to college and career success.
+          </p>
+          <p class="mt-2 text-gray-600">
+            <a href="https://www.csforall.org">https://www.csforall.org</a>
+          </p>
+        </div>
+      </div>
+      <!-- End of card -->
+      <hr />
+      <!-- Start of card -->
+      <div class="md:flex mt-8 mb-8">
+        <div class="md:flex-shrink-0">
+          <img
+            class="rounded-lg md:w-56 mt-6"
+            src="https://www.codefirstgirls.org.uk/uploads/1/9/8/9/19897181/1404924530.png"
+            alt="Code First Girls"
+          />
+        </div>
+        <div class="mt-4 md:mt-0 md:ml-6">
+          <div
+            class="uppercase tracking-wide text-sm text-indigo-600 font-bold"
+          >
+            Code First Girls
+          </div>
+          <a
+            href="#"
+            class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline"
+            >Our Mission:</a
+          >
+          <p class="mt-2 text-gray-600">
+            CSforALL’s mission is to make high-quality computer science an integral part of the educational experience of all K-12 students and teachers and to support student pathways to college and career success.
+          </p>
+          <p class="mt-2 text-gray-600">
+            <a href="https://www.csforall.org"
+              >https://www.csforall.org</a
+            >
+          </p>
+        </div>
+      </div>
+      <!-- End of card -->
+      <hr />
+      <!-- Start of card -->
+      <div class="md:flex mt-8 mb-8">
+        <div class="md:flex-shrink-0">
+          <img
+            class="rounded-lg md:w-56 mt-6 bg-purple-600 p-2"
+            src="https://dresscode.org.uk/wp-content/themes/dresscode/images/logo.svg"
+            alt="DressCode"
+          />
+        </div>
+        <div class="mt-4 md:mt-0 md:ml-6">
+          <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">
+            DressCode
+          </div>
+          <a href="https://dresscode.org.uk/" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">Our Mission:</a>
+          <p class="mt-2 text-gray-600">
+            CSforALL’s mission is to make high-quality computer science an integral part of the educational experience of all K-12 students and teachers and to support student pathways to college and career success.
+          </p>
+          <p class="mt-2 text-gray-600">
+            <a href="https://dresscode.org.uk/">https://dresscode.org.uk/</a>
+          </p>
+        </div>
+      </div>
+      <!-- End of card -->
+      <hr />
+      <!-- Start of card -->
+      <div class="md:flex mt-8 mb-8">
+        <div class="md:flex-shrink-0">
+          <img class="rounded-lg md:w-56 mt-6"
+            src="https://3zjc852t4swp1lmezl171oga-wpengine.netdna-ssl.com/wp-content/themes/girlswhocode/images/header-logo.png"
+            alt="Girls Who Code"/>
+        </div>
+        <div class="mt-4 md:mt-0 md:ml-6">
+          <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold"> Girls Who Code</div>
+          <a href="https://girlswhocode.com/" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">Our Mission:</a>
+          <p class="mt-2 text-gray-600">
+            CSforALL’s mission is to make high-quality computer science an integral part of the educational experience of all K-12 students and teachers and to support student pathways to college and career success.
+          </p>
+          <p class="mt-2 text-gray-600">
+            <a href="https://www.girlswhocode.com">https://www.girlswhocode.com</a>
+          </p>
+        </div>
+      </div>
+      <!-- End of card -->
+      <hr />
+      <!-- Start of card -->
+      <div class="md:flex mt-8 mb-8">
+        <div class="md:flex-shrink-0">
+          <img
+            class="rounded-lg md:w-56 mt-6"
+            src="https://makeithappen.club/img/logo@2x.png"
+            alt="Woman paying for a purchase"
+          />
+        </div>
+        <div class="mt-4 md:mt-0 md:ml-6">
+          <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">
+            Make it Happen
+          </div>
+          <a href="https://www.makeithappen.club" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">Our Mission:</a>
+          <p class="mt-2 text-gray-600">
+            CSforALL’s mission is to make high-quality computer science an integral part of the educational experience of all K-12 students and teachers and to support student pathways to college and career success.
+          </p>
+          <p class="mt-2 text-gray-600">
+            <a href="https://www.makeithappen.club">https://www.makeithappen.club</a>
+          </p>
+        </div>
+      </div>
+      <!-- End of card -->
+      <hr />
+      <!-- Start of card -->
+      <div class="md:flex mt-8 mb-8">
+        <div class="md:flex-shrink-0">
+          <img class="rounded-lg md:w-56 mt-6 bg-purple-600 p-2"
+            src="https://www.smartstems.org/wp-content/uploads/2017/02/SmartSTEM_EDF_white.png"
+            alt="Woman paying for a purchase"/>
+        </div>
+        <div class="mt-4 md:mt-0 md:ml-6">
+          <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">SmartSTEMs</div>
+          <a href="https://www.smartstems.org/" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">Our Mission:</a>
+          <p class="mt-2 text-gray-600">
+            CSforALL’s mission is to make high-quality computer science an integral part of the educational experience of all K-12 students and teachers and to support student pathways to college and career success.
+          </p>
+          <p class="mt-2 text-gray-600">
+            <a href="https://www.smartstems.org/">https://www.smartstems.org/</a>
+          </p>
+        </div>
+      </div>
+      <!-- End of card -->
+
+    </div>
+  </body>
 </html>
